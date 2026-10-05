@@ -50,9 +50,14 @@
     Config’ten ister ve oyuncu kimliğinizi, oyunda seçtiğiniz dil ve bölgeyi, uygulama sürümünü ve platformu
     gönderir. Sezon içerikleri Unity Cloud Content Delivery üzerinden indirilir.</li>
     <li><strong>Teknik bağlantı verileri.</strong> Cihazınız bir sunucuya bağlandığında o sunucu IP adresinizi
-    alır. Oyun ayrıca çevrimiçi olup olmadığınızı anlamak için herkese açık bir web sunucusuna (şu anda
-    www.google.com) basit bir istek gönderir.</li>
+    alır. Oyun ayrıca çevrimiçi olup olmadığınızı Unity’nin hizmet sunucularına (oyunun çevrimiçi
+    hizmetlerini barındıran aynı sağlayıcı) yapılan basit bir bağlantı testiyle anlar; bunun için herhangi bir
+    Google sunucusuyla iletişim kurulmaz.</li>
   </ul>
+  <p><strong>Bu işlemler ne zaman olur?</strong> Anonim oyuncu kimliği, bir Cloud Save kaydı (hoş geldin
+  denemesi dâhil) ve yapılandırma isteği, onay ekranı gösterilmeden önce, oyun açılırken otomatik olarak
+  oluşturulur ve gönderilir. Oynayabilmek için onay vermeniz gerekir. Onay vermez ve bu verilerin kalmasını
+  istemezseniz oyunu kapatın ve silinmesini isteyin (bkz. <a href="/wos/tr/data-deletion">Veri Silme</a>).</p>
 
   <h2>Verileri neden ve hangi hukuki sebeple kullanıyoruz</h2>
   <ul>
@@ -84,8 +89,8 @@
     <li><strong>Unity Technologies (Unity Gaming Services)</strong>: Authentication, Player Accounts, Cloud
     Save, Remote Config, Cloud Code ve Cloud Content Delivery hizmetlerini sağlar. Gizlilik politikası:
     <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a>.</li>
-    <li><strong>Google</strong>: Google Play’i (satın alımlar ve abonelikler) sağlar ve yukarıda anlatılan
-    bağlantı kontrolünü alır. Gizlilik politikası:
+    <li><strong>Google</strong>: Google Play’i (satın alımlar ve abonelikler) ve, girişte Google’ı seçerseniz,
+    Unity Player Accounts üzerinden Google girişini sağlar. Gizlilik politikası:
     <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
   </ul>
   <p>Bu sağlayıcıların sunucuları Türkiye dışında, Avrupa Ekonomik Alanı dışında da olabilir. Verileriniz bu
