@@ -45,10 +45,25 @@
     <li><strong>App configuration requests.</strong> When the game starts it asks Unity Remote Config for its
     current settings and sends your player ID, the language and region chosen in the game, the app version
     and the platform. Season content is downloaded from Unity Cloud Content Delivery.</li>
+    <li><strong>Device information and identifiers.</strong> When the game uses Unity’s services (Remote
+    Config and the purchase validation in Cloud Code), they receive basic information about your device, such
+    as the device model, the operating system and the app version, together with your player ID and an
+    installation ID created by Unity’s services. This is used only to make the game work.</li>
+    <li><strong>Approximate location.</strong> Unity Remote Config works out your approximate location (for
+    example your country) from your IP address so that it can choose the right settings for the game. It is
+    used only for that request and is not stored. The game never uses your device’s location (GPS).</li>
     <li><strong>Technical connection data.</strong> Whenever your device contacts a server, that server
     receives your IP address. The game also checks that you are online with a simple connection test to
     Unity’s service servers (the same provider that hosts the game’s online services); no Google server is
     contacted for this.</li>
+    <li><strong>Problem reports (only if you send one).</strong> “Report a Problem” opens your own e-mail
+    app with a prepared message; nothing is sent unless you press Send there. Every report contains the
+    report type, the app version, the time and the game language. Word and level reports also contain the
+    season and level and, for word reports, the words of the level, the words you solved or tried and the
+    word you chose. Only a “Something is broken” report also contains your player ID, whether you play as a
+    guest or with an account, the device model, the operating system, the app’s install source, the
+    connection state, and a short log of recent warnings, errors and steps in the game (e-mail addresses
+    and codes are removed from this log). We also receive your e-mail address and anything you write.</li>
   </ul>
   <p><strong>When this happens.</strong> The anonymous player ID, a Cloud Save record (including the welcome
   trial) and the configuration request are created and sent automatically when the game starts, before the
@@ -65,13 +80,16 @@
     obligations for accounting and tax records.</li>
     <li>To keep the game working and secure (configuration, maintenance, forced updates).
     Basis: our legitimate interest.</li>
+    <li>To answer your problem reports and support e-mails and to fix the problems you report.
+    Basis: our legitimate interest in providing a working game, and your request.</li>
     <li>You confirm in the game that you accept this policy and the Terms of Service. We keep that
     confirmation on your device (see below).</li>
   </ul>
 
   <h2>What we do not collect</h2>
   <p>The game contains no advertising and no advertising SDK, and it does not use your advertising ID. It
-  does not use analytics or tracking services. It does not ask for your location, contacts, camera,
+  does not use analytics or tracking services, and your data is not used for advertising, marketing or
+  personalization. It does not ask for permission to use your device location, contacts, camera,
   microphone or photos, and it does not collect your real name, address or payment card details.</p>
   <p>If this ever changes, we will update this policy and ask you to accept the new version before it applies.</p>
 
@@ -82,6 +100,8 @@
   not leave your device unless it is part of the game data described above.</p>
 
   <h2>Processors and international transfers</h2>
+  <p>We do not sell your data or share it with third parties for their own purposes. The providers below
+  process it only on our behalf, as our service providers (processors), to run the game.</p>
   <ul>
     <li><strong>Unity Technologies (Unity Gaming Services)</strong> provides Authentication, Player Accounts,
     Cloud Save, Remote Config, Cloud Code and Cloud Content Delivery. Privacy policy:
@@ -101,6 +121,9 @@
     <li><strong>Purchase records</strong> (store transaction ID linked to the player ID): kept after account
     deletion for as long as tax, accounting and fraud-prevention rules require. Purchase records held by
     Google follow Google’s own rules.</li>
+    <li><strong>Approximate location:</strong> not stored; it is used only for the configuration request.</li>
+    <li><strong>Problem reports and support e-mails:</strong> 12 months after we receive them, then we
+    delete them. You can ask us to delete them sooner.</li>
     <li><strong>Data on your device:</strong> until you delete it in the game, clear the app’s data or
     uninstall the game.</li>
   </ul>
@@ -138,7 +161,7 @@
     <li><a href="/wos/en/data-deletion">Data Deletion</a></li>
     <li><a href="/wos/en/support">Support</a></li>
   </ul>
-  <p class="version">Version: 2026.10.1<br>Effective date: EFFECTIVE_DATE_PENDING</p>
+  <p class="version">Version: 2026.10.1<br>Effective date: 1 October 2026</p>
   <p>CNRGAMES &middot; <a href="mailto:huseyin.cinar@cinar-works.com">huseyin.cinar@cinar-works.com</a></p>
 </footer>
 

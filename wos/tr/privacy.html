@@ -49,10 +49,25 @@
     <li><strong>Uygulama yapılandırma istekleri.</strong> Oyun açılırken güncel ayarlarını Unity Remote
     Config’ten ister ve oyuncu kimliğinizi, oyunda seçtiğiniz dil ve bölgeyi, uygulama sürümünü ve platformu
     gönderir. Sezon içerikleri Unity Cloud Content Delivery üzerinden indirilir.</li>
+    <li><strong>Cihaz bilgileri ve tanımlayıcılar.</strong> Oyun Unity hizmetlerini (Remote Config ve Cloud
+    Code’daki satın alma doğrulaması) kullandığında bu hizmetler cihazınızla ilgili temel bilgileri, örneğin
+    cihaz modelini, işletim sistemini ve uygulama sürümünü, oyuncu kimliğiniz ve Unity hizmetlerinin
+    oluşturduğu bir kurulum kimliğiyle birlikte alır. Bu bilgiler yalnızca oyunun çalışması için kullanılır.</li>
+    <li><strong>Yaklaşık konum.</strong> Unity Remote Config, oyun için doğru ayarları seçebilmek amacıyla
+    yaklaşık konumunuzu (örneğin ülkenizi) IP adresinizden çıkarır. Bu bilgi yalnızca o istek için kullanılır
+    ve saklanmaz. Oyun cihazınızın konumunu (GPS) hiçbir zaman kullanmaz.</li>
     <li><strong>Teknik bağlantı verileri.</strong> Cihazınız bir sunucuya bağlandığında o sunucu IP adresinizi
     alır. Oyun ayrıca çevrimiçi olup olmadığınızı Unity’nin hizmet sunucularına (oyunun çevrimiçi
     hizmetlerini barındıran aynı sağlayıcı) yapılan basit bir bağlantı testiyle anlar; bunun için herhangi bir
     Google sunucusuyla iletişim kurulmaz.</li>
+    <li><strong>Sorun bildirimleri (yalnızca siz gönderirseniz).</strong> “Sorun Bildir” kendi e-posta
+    uygulamanızı hazır bir mesajla açar; orada Gönder’e basmadığınız sürece hiçbir şey gönderilmez. Her
+    bildirimde bildirim türü, uygulama sürümü, zaman ve oyun dili bulunur. Kelime ve bölüm bildirimlerinde
+    ayrıca sezon ve bölüm, kelime bildirimlerinde de bölümün kelimeleri, çözdüğünüz veya denediğiniz
+    kelimeler ve seçtiğiniz kelime bulunur. Yalnızca “Bir şey bozuk” bildiriminde ayrıca oyuncu kimliğiniz,
+    misafir mi yoksa hesapla mı oynadığınız, cihaz modeli, işletim sistemi, uygulamanın yüklendiği kaynak,
+    bağlantı durumu ve oyundaki son uyarı, hata ve adımlardan oluşan kısa bir kayıt bulunur (bu kayıttan
+    e-posta adresleri ve kodlar çıkarılır). Ayrıca e-posta adresinizi ve yazdığınız her şeyi alırız.</li>
   </ul>
   <p><strong>Bu işlemler ne zaman olur?</strong> Anonim oyuncu kimliği, bir Cloud Save kaydı (hoş geldin
   denemesi dâhil) ve yapılandırma isteği, onay ekranı gösterilmeden önce, oyun açılırken otomatik olarak
@@ -68,14 +83,17 @@
     ilişkin hukuki yükümlülüklerimiz.</li>
     <li>Oyunun çalışmasını ve güvenliğini sağlamak için (yapılandırma, bakım, zorunlu güncelleme). Hukuki
     sebep: meşru menfaatimiz.</li>
+    <li>Sorun bildirimlerinizi ve destek e-postalarınızı yanıtlamak ve bildirdiğiniz sorunları gidermek için.
+    Hukuki sebep: çalışan bir oyun sunmaya yönelik meşru menfaatimiz ve sizin talebiniz.</li>
     <li>Bu politikayı ve Kullanım Koşulları’nı kabul ettiğinizi oyunda onaylarsınız. Bu onayı cihazınızda
     saklarız (aşağıya bakın).</li>
   </ul>
 
   <h2>Toplanmayan veriler</h2>
   <p>Oyunda reklam ve reklam SDK’sı yoktur; reklam kimliğiniz kullanılmaz. Analiz veya izleme hizmeti
-  kullanılmaz. Oyun konumunuza, rehberinize, kameranıza, mikrofonunuza veya fotoğraflarınıza erişim istemez;
-  gerçek adınızı, adresinizi veya ödeme kartı bilgilerinizi toplamaz.</p>
+  kullanılmaz; verileriniz reklam, pazarlama veya kişiselleştirme amacıyla kullanılmaz. Oyun cihazınızın
+  konumuna, rehberinize, kameranıza, mikrofonunuza veya fotoğraflarınıza erişim izni istemez; gerçek adınızı,
+  adresinizi veya ödeme kartı bilgilerinizi toplamaz.</p>
   <p>Bu durum değişirse bu politikayı güncelleriz ve yeni sürüm uygulanmadan önce kabul etmenizi isteriz.</p>
 
   <h2>Yalnızca cihazınızda saklanan veriler</h2>
@@ -85,6 +103,9 @@
   verilerinin bir parçası olmadıkça cihazınızdan çıkmaz.</p>
 
   <h2>Hizmet sağlayıcılar ve yurt dışına aktarım</h2>
+  <p>Verilerinizi satmayız ve üçüncü kişilerle onların kendi amaçları için paylaşmayız. Aşağıdaki
+  sağlayıcılar verileri yalnızca bizim adımıza, hizmet sağlayıcımız (veri işleyen) olarak, oyunu çalıştırmak
+  için işler.</p>
   <ul>
     <li><strong>Unity Technologies (Unity Gaming Services)</strong>: Authentication, Player Accounts, Cloud
     Save, Remote Config, Cloud Code ve Cloud Content Delivery hizmetlerini sağlar. Gizlilik politikası:
@@ -103,6 +124,9 @@
     <li><strong>Satın alma kayıtları</strong> (oyuncu kimliğine bağlı mağaza işlem numarası): hesap silindikten
     sonra da vergi, muhasebe ve dolandırıcılığı önleme kuralları gerektirdiği süre boyunca saklanır. Google’ın
     elindeki satın alma kayıtları Google’ın kurallarına tabidir.</li>
+    <li><strong>Yaklaşık konum:</strong> saklanmaz; yalnızca yapılandırma isteği için kullanılır.</li>
+    <li><strong>Sorun bildirimleri ve destek e-postaları:</strong> bize ulaştıktan sonra 12 ay saklanır, sonra
+    silinir. Daha önce silinmesini isteyebilirsiniz.</li>
     <li><strong>Cihazdaki veriler:</strong> oyunda siliniz, uygulama verilerini temizleyinceye veya oyunu
     kaldırıncaya kadar.</li>
   </ul>
@@ -147,7 +171,7 @@
     <li><a href="/wos/tr/aydinlatma">Aydınlatma Metni</a></li>
     <li><a href="/wos/tr/acik-riza">Açık Rıza Metni</a></li>
   </ul>
-  <p class="version">Sürüm: 2026.10.1<br>Yürürlük tarihi: EFFECTIVE_DATE_PENDING</p>
+  <p class="version">Sürüm: 2026.10.1<br>Yürürlük tarihi: 1 Ekim 2026</p>
   <p>CNRGAMES &middot; <a href="mailto:huseyin.cinar@cinar-works.com">huseyin.cinar@cinar-works.com</a></p>
 </footer>
 
