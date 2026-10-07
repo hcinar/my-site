@@ -161,6 +161,18 @@ a[href^="mailto:"], code { overflow-wrap: anywhere; }
 
 .card h2, .card h3 { margin-top: 0; }
 
+/* App icon next to the app name (/wos/ and the card on /). */
+.app-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.app-title img { flex: none; }
+
+.app-title h1, .app-title h3, .app-title p { margin: 0; }
+
 .notice {
   border-left: 3px solid var(--accent);
   padding: 0.5rem 0 0.5rem 1rem;
