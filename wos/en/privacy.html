@@ -46,9 +46,15 @@
     current settings and sends your player ID, the language and region chosen in the game, the app version
     and the platform. Season content is downloaded from Unity Cloud Content Delivery.</li>
     <li><strong>Technical connection data.</strong> Whenever your device contacts a server, that server
-    receives your IP address. The game also checks that you are online by sending a simple request to a
-    public web server (currently www.google.com).</li>
+    receives your IP address. The game also checks that you are online with a simple connection test to
+    Unity’s service servers (the same provider that hosts the game’s online services); no Google server is
+    contacted for this.</li>
   </ul>
+  <p><strong>When this happens.</strong> The anonymous player ID, a Cloud Save record (including the welcome
+  trial) and the configuration request are created and sent automatically when the game starts, before the
+  acceptance screen is shown. You must accept before you can play. If you do not accept and do not want this
+  data to remain, close the game and ask us to delete it (see <a href="/wos/en/data-deletion">Data
+  Deletion</a>).</p>
 
   <h2>Why we use your data and on what basis</h2>
   <ul>
@@ -80,8 +86,8 @@
     <li><strong>Unity Technologies (Unity Gaming Services)</strong> provides Authentication, Player Accounts,
     Cloud Save, Remote Config, Cloud Code and Cloud Content Delivery. Privacy policy:
     <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a>.</li>
-    <li><strong>Google</strong> provides Google Play (purchases and subscriptions) and receives the
-    connectivity check described above. Privacy policy:
+    <li><strong>Google</strong> provides Google Play (purchases and subscriptions) and, if you choose Google when
+    you sign in, Google sign-in through Unity Player Accounts. Privacy policy:
     <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
   </ul>
   <p>These providers operate servers that may be located outside your country, including outside the
@@ -132,7 +138,7 @@
     <li><a href="/wos/en/data-deletion">Data Deletion</a></li>
     <li><a href="/wos/en/support">Support</a></li>
   </ul>
-  <p class="version">Version: 2026.09.1<br>Effective date: EFFECTIVE_DATE_PENDING</p>
+  <p class="version">Version: 2026.10.1<br>Effective date: EFFECTIVE_DATE_PENDING</p>
   <p>CNRGAMES &middot; <a href="mailto:huseyin.cinar@cinar-works.com">huseyin.cinar@cinar-works.com</a></p>
 </footer>
 
