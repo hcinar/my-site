@@ -32,10 +32,19 @@
   <ul>
     <li><strong>Anonymous player ID.</strong> When the game starts it signs you in automatically with Unity
     Authentication and creates a random player ID. It does not contain your name or e-mail address.</li>
-    <li><strong>Optional account sign-in.</strong> If you choose “Sign In” instead of playing as a guest, the
-    sign-in is run by Unity Player Accounts (Google, Apple or e-mail and password). We never see your
-    password. Your sign-in identity is linked to your player ID so that you can restore your progress on
-    another device.</li>
+    <li><strong>Google Play Games sign-in.</strong> After you accept the Terms, the game links your player ID
+    to the Google Play Games account on your phone, if there is one. This needs no password and no browser
+    page. Unity receives a one-time authorization code from Google to create the link; your player ID stays
+    the same. The link lets you restore progress, passes and subscription on a new phone or after a
+    reinstall. If Play Games is not available, or you do not use it, you play as a guest (progress stays on
+    that phone).</li>
+    <li><strong>Google Play Games data.</strong> Google runs Play Games Services as its own service. Through
+    it Google handles your Play Games profile (gamertag, avatar) and technical diagnostics of the Play Games
+    SDK, and, if achievements are active in your version, the achievements you unlock and their progress,
+    which appear in your Play Games profile and can be seen according to your Play Games privacy settings.
+    Google is responsible for this data under <a href="https://policies.google.com/privacy">Google’s privacy
+    policy</a> and its Play Games terms. We do not use this data for advertising (the game has no
+    advertising), and we do not read friends lists or use Saved Games or leaderboards.</li>
     <li><strong>Game data (Cloud Save).</strong> Your progress in each season and level, your settings
     (language, region, music and sound volume, vibration), and your premium status: the dates of the welcome
     trial, and the product and expiry date of any pass or subscription.</li>
@@ -70,14 +79,17 @@
   </ul>
   <p><strong>When this happens.</strong> The anonymous player ID, a Cloud Save record (including the welcome
   trial) and the configuration request are created and sent automatically when the game starts, before the
-  acceptance screen is shown. You must accept before you can play. If you do not accept and do not want this
+  acceptance screen is shown. You must accept before you can play. The Play Games link happens only after you
+  accepted the Terms. If you do not accept and do not want this
   data to remain, close the game and ask us to delete it (see <a href="/wos/en/data-deletion">Data
   Deletion</a>).</p>
 
   <h2>Why we use your data and on what basis</h2>
   <ul>
-    <li>To provide the game: sign-in, saving and restoring your progress, season content, premium access.
+    <li>To provide the game: saving and restoring your progress, season content, premium access.
     Basis: performance of the contract with you (the Terms of Service).</li>
+    <li>To sign you in with Google Play Games and keep your progress across devices.
+    Basis: performance of the contract.</li>
     <li>To process and validate purchases and to prevent misuse of purchase receipts.
     Basis: performance of the contract, our legitimate interest in preventing fraud, and our legal
     obligations for accounting and tax records.</li>
@@ -99,18 +111,23 @@
   <h2>Data stored only on your device</h2>
   <p>The game stores on your device: your settings (language, region, volume, vibration), a cached copy of
   your progress, downloaded season content, cached configuration values, and your confirmation that you
-  accepted this policy and the Terms of Service (version, date, and your age confirmation). This data does
-  not leave your device unless it is part of the game data described above.</p>
+  accepted this policy and the Terms of Service (version, date, and your age confirmation), and the display
+  name, ID and profile picture of the linked Play Games account (so Settings can show it, also offline;
+  removed when you delete your account). Android backup of app data is switched off, so a reinstall never
+  restores an old session from a backup. This data does not leave your device unless it is part of the game
+  data described above.</p>
 
   <h2>Processors and international transfers</h2>
   <p>We do not sell your data or share it with third parties for their own purposes. The providers below
-  process it only on our behalf, as our service providers (processors), to run the game.</p>
+  process it only on our behalf, as our service providers (processors), to run the game. Unity acts as our
+  processor; Google Play and Google Play Games Services follow Google’s own rules.</p>
   <ul>
-    <li><strong>Unity Technologies (Unity Gaming Services)</strong> provides Authentication, Player Accounts,
+    <li><strong>Unity Technologies (Unity Gaming Services)</strong> provides Authentication,
     Cloud Save, Remote Config, Cloud Code and Cloud Content Delivery. Privacy policy:
     <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a>.</li>
-    <li><strong>Google</strong> provides Google Play (purchases and subscriptions) and, if you choose Google when
-    you sign in, Google sign-in through Unity Player Accounts. Privacy policy:
+    <li><strong>Google</strong> provides Google Play (purchases and subscriptions) and Google Play Games Services
+    (sign-in link, gamer profile, achievements). For its own Play Games data Google acts as an independent
+    controller. Privacy policy:
     <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
   </ul>
   <p>These providers operate servers that may be located outside your country, including outside the
@@ -141,10 +158,11 @@
   <h2>Deleting your data</h2>
   <p>You can delete your account and all saved game data in the game under Settings → Delete Account, or by
   e-mail. All routes are explained on the <a href="/wos/en/data-deletion">Data Deletion</a> page.</p>
-  <p>Deleting your game account removes the link to your Unity Player Account (the Google, Apple or e-mail
-  sign-in) but not the Unity Player Account itself, which belongs to Unity. To delete it, use
-  <a href="https://player-account.unity.com/delete-account">player-account.unity.com/delete-account</a>. For other data deletion or disclosure requests about your Unity Player Account, write to Unity at
-  <a href="mailto:unity-player-login-privacy@unity3d.com">unity-player-login-privacy@unity3d.com</a>.</p>
+  <p>Deleting your game account removes your Cloud Save data, your anonymous player and its link to Google
+  Play Games. Your <strong>Google Play Games profile belongs to Google</strong> and is not deleted by the
+  game; manage or delete it in the Google Play Games app or in your Google Account. After the game restarts
+  it behaves like a fresh install and, once you accept the Terms again, can link a <strong>new</strong>
+  player to the same Play Games account.</p>
 
   <h2>Children and minimum age</h2>
   <p>The game is for players aged <strong>13 or older</strong>. You confirm your age before you start
@@ -164,7 +182,7 @@
     <li><a href="/wos/en/data-deletion">Data Deletion</a></li>
     <li><a href="/wos/en/support">Support</a></li>
   </ul>
-  <p class="version">Version: 2026.10.1<br>Effective date: 1 October 2026</p>
+  <p class="version">Version: 2026.10.2<br>Effective date: 12 October 2026</p>
   <p>CNRGAMES &middot; <a href="mailto:huseyin.cinar@cinar-works.com">huseyin.cinar@cinar-works.com</a></p>
 </footer>
 
