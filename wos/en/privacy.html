@@ -38,6 +38,11 @@
     the same. The link lets you restore progress, passes and subscription on a new phone or after a
     reinstall. If Play Games is not available, or you do not use it, you play as a guest (progress stays on
     that phone).</li>
+    <li><strong>Game Center sign-in (iPhone and iPad).</strong> After you accept the Terms, the game links
+    your player ID to your Game Center player ID (<code>teamPlayerId</code>), if you are signed in to Game
+    Center. Your player ID stays the same. The link lets you restore progress, passes and subscription on a
+    new iPhone or iPad or after a reinstall. Your Game Center name and photo are shown in Settings and are kept
+    only on your device. If you are not signed in to Game Center, you play as a guest.</li>
     <li><strong>Google Play Games data.</strong> Google runs Play Games Services as its own service. Through
     it Google handles your Play Games profile (gamertag, avatar) and technical diagnostics of the Play Games
     SDK, and, if achievements are active in your version, the achievements you unlock and their progress,
@@ -48,11 +53,12 @@
     <li><strong>Game data (Cloud Save).</strong> Your progress in each season and level, your settings
     (language, region, music and sound volume, vibration), and your premium status: the dates of the welcome
     trial, and the product and expiry date of any pass or subscription.</li>
-    <li><strong>Purchase data.</strong> Purchases are handled by Google Play. We never receive your card or
-    payment details. To unlock premium access, the game sends the purchase receipt to our server-side
-    validation (Unity Cloud Code), which checks it with Google. This check uses the Google Play Developer API
-    only to confirm that your own purchase is valid; it does not give us access to your Google account or to
-    any other data in it. We keep a record of the store transaction ID
+    <li><strong>Purchase data.</strong> Purchases are handled by Google Play on Android and by the App Store
+    on iPhone and iPad. We never receive your card or payment details. To unlock premium access, the game
+    sends the purchase receipt (Google Play or App Store) to our server-side validation (Unity Cloud Code),
+    which checks it with the store. This check uses the Google Play Developer API
+    only to confirm that your own purchase is valid; it does not give us access to your Google account or Apple ID
+    or to any other data in them. We keep a record of the store transaction ID
     together with your player ID so that one purchase cannot be used by several players.</li>
     <li><strong>App configuration requests.</strong> When the game starts it asks Unity Remote Config for its
     current settings and sends your player ID, the language and region chosen in the game, the app version
@@ -74,13 +80,15 @@
     season and level and, for word reports, the words of the level, the words you solved or tried and the
     word you chose. Only a “Something is broken” report also contains your player ID, whether you play as a
     guest or with an account, the device model, the operating system, the app’s install source, the
-    connection state, and a short log of recent warnings, errors and steps in the game (e-mail addresses
-    and codes are removed from this log). We also receive your e-mail address and anything you write.</li>
+    connection state, and the last lines of a technical log of recent warnings, errors and steps in the game
+    (e-mail addresses and codes are removed and IDs are masked in this log). The whole report is in the
+    e-mail before you send it, so you can read and edit it first. We also receive your e-mail address and
+    anything you write.</li>
   </ul>
   <p><strong>When this happens.</strong> The anonymous player ID, a Cloud Save record (including the welcome
   trial) and the configuration request are created and sent automatically when the game starts, before the
-  acceptance screen is shown. You must accept before you can play. The Play Games link happens only after you
-  accepted the Terms. If you do not accept and do not want this
+  acceptance screen is shown. You must accept before you can play. The Play Games and Game Center links happen only after
+  you accepted the Terms. If you do not accept and do not want this
   data to remain, close the game and ask us to delete it (see <a href="/wos/en/data-deletion">Data
   Deletion</a>).</p>
 
@@ -88,7 +96,7 @@
   <ul>
     <li>To provide the game: saving and restoring your progress, season content, premium access.
     Basis: performance of the contract with you (the Terms of Service).</li>
-    <li>To sign you in with Google Play Games and keep your progress across devices.
+    <li>To sign you in with Google Play Games or Game Center and keep your progress across devices.
     Basis: performance of the contract.</li>
     <li>To process and validate purchases and to prevent misuse of purchase receipts.
     Basis: performance of the contract, our legitimate interest in preventing fraud, and our legal
@@ -112,7 +120,7 @@
   <p>The game stores on your device: your settings (language, region, volume, vibration), a cached copy of
   your progress, downloaded season content, cached configuration values, and your confirmation that you
   accepted this policy and the Terms of Service (version, date, and your age confirmation), and the display
-  name, ID and profile picture of the linked Play Games account (so Settings can show it, also offline;
+  name, ID and profile picture of the linked Play Games or Game Center account (so Settings can show it, also offline;
   removed when you delete your account). Android backup of app data is switched off, so a reinstall never
   restores an old session from a backup. This data does not leave your device unless it is part of the game
   data described above.</p>
@@ -120,7 +128,8 @@
   <h2>Processors and international transfers</h2>
   <p>We do not sell your data or share it with third parties for their own purposes. The providers below
   process it only on our behalf, as our service providers (processors), to run the game. Unity acts as our
-  processor; Google Play and Google Play Games Services follow Google’s own rules.</p>
+  processor; Google Play and Google Play Games Services follow Google’s own rules, and the App Store and Game
+  Center follow Apple’s own rules.</p>
   <ul>
     <li><strong>Unity Technologies (Unity Gaming Services)</strong> provides Authentication,
     Cloud Save, Remote Config, Cloud Code and Cloud Content Delivery. Privacy policy:
@@ -129,6 +138,10 @@
     (sign-in link, gamer profile, achievements). For its own Play Games data Google acts as an independent
     controller. Privacy policy:
     <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
+    <li><strong>Apple</strong> provides the App Store (purchases and subscriptions on iPhone and iPad) and
+    Game Center (sign-in link, player profile) as its own services. Apple is the controller of your Game
+    Center profile. Privacy policy:
+    <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</li>
   </ul>
   <p>These providers operate servers that may be located outside your country, including outside the
   European Economic Area and outside Türkiye. By using the game you understand that your data can be
@@ -140,7 +153,7 @@
     <li><strong>Cloud Save data and your anonymous player ID:</strong> until you delete your account.</li>
     <li><strong>Purchase records</strong> (store transaction ID linked to the player ID): kept after account
     deletion for as long as tax, accounting and fraud-prevention rules require. Purchase records held by
-    Google follow Google’s own rules.</li>
+    Google or Apple follow their own rules.</li>
     <li><strong>Approximate location:</strong> not stored; it is used only for the configuration request.</li>
     <li><strong>Problem reports and support e-mails:</strong> 12 months after we receive them, then we
     delete them. You can ask us to delete them sooner.</li>
@@ -163,6 +176,10 @@
   game; manage or delete it in the Google Play Games app or in your Google Account. After the game restarts
   it behaves like a fresh install and, once you accept the Terms again, can link a <strong>new</strong>
   player to the same Play Games account.</p>
+  <p>Your <strong>Game Center profile belongs to Apple</strong> and is not deleted by the game; manage it in
+  <em>Settings → Game Center</em> on your iPhone or iPad. Deleting your game account removes the link, and
+  once you accept the Terms again the game can link a <strong>new</strong> player to the same Game Center
+  account.</p>
 
   <h2>Children and minimum age</h2>
   <p>The game is for players aged <strong>13 or older</strong>. You confirm your age before you start
@@ -182,7 +199,7 @@
     <li><a href="/wos/en/data-deletion">Data Deletion</a></li>
     <li><a href="/wos/en/support">Support</a></li>
   </ul>
-  <p class="version">Version: 2026.10.2<br>Effective date: 12 October 2026</p>
+  <p class="version">Version: 2026.10.3<br>Effective date: 16 October 2026</p>
   <p>CNRGAMES &middot; <a href="mailto:huseyin.cinar@cinar-works.com">huseyin.cinar@cinar-works.com</a></p>
 </footer>
 
