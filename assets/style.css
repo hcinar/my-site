@@ -173,6 +173,63 @@ a[href^="mailto:"], code { overflow-wrap: anywhere; }
 
 .app-title h1, .app-title h3, .app-title p { margin: 0; }
 
+/* Official Google Play badges (/wos/ and the card on /), cropped to the
+   badge itself so TR and EN render at the same size. The gap is Google's
+   clear space: a quarter of the badge height. The YouTube, TikTok and X buttons copy the
+   badge's height, corners and border so the row reads as one set. */
+.get-app {
+  --badge-h: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: calc(var(--badge-h) / 4);
+  margin: 0 0 1.5rem;
+}
+
+.get-app + .get-app { margin-top: calc(-1.5rem + var(--badge-h) / 4); }
+.get-app.small { --badge-h: 40px; margin: 1rem 0 0; }
+
+.get-app a { line-height: 0; }
+.play-badge { display: block; height: var(--badge-h); width: auto; }
+
+.get-app a.social-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: var(--badge-h);
+  padding: 0 0.875rem;
+  background: #000;
+  color: #fff;
+  border: 1px solid #a6a6a6;
+  border-radius: calc(var(--badge-h) / 8);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.get-app a.social-button:hover { color: #fff; border-color: #fff; }
+
+/* Store screenshots: four per row, two per row on phones. */
+.shots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.625rem;
+  margin: 0 0 1.125rem;
+}
+
+.shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+@media (max-width: 30rem) {
+  .shots { grid-template-columns: repeat(2, 1fr); }
+}
+
 .notice {
   border-left: 3px solid var(--accent);
   padding: 0.5rem 0 0.5rem 1rem;
